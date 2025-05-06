@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Velvet Stays – Coming Soon</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Playfair Display', serif;
+      color: #f5e0c3;
+      background: linear-gradient(to top, #000000, #5a3e2f, #e2b07b);
+      background-size: 100% 100%;
+      animation: gradientBG 12s ease infinite;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+    @keyframes gradientBG {
+      0%   { background-position: 50% 100%; }
+      50%  { background-position: 50% 0%; }
+      100% { background-position: 50% 100%; }
+    }
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      animation: float 4s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%,100% { transform: translate(-50%, 0); }
+      50%     { transform: translate(-50%, -10px); }
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      max-width: 600px;
+    }
+    h1 {
+      font-size: 3em;
+      animation: fadeInUp 2s ease-out;
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 1.3em;
+      color: #e2d2b5;
+      animation: fadeInUp 2.5s ease-out;
+      line-height: 1.4;
+    }
+    @keyframes fadeInUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to   { transform: translateY(0);     opacity: 1; }
+    }
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: .9em;
+      color: #bba285;
+    }
+  </style>
+</head>
+<body>
+  <img src="logo.png" alt="Velvet Stays Logo" class="logo" />
+  <div class="content">
+    <h1>Coming Soon</h1>
+    <p>We're working hard to bring you an unforgettable luxury stay.<br>Check back soon!</p>
+  </div>
+  <footer>&copy; 2025 Velvet Stays · velvetstays.co.uk</footer>
+</body>
+</html>
